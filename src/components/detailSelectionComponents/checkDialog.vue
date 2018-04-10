@@ -42,8 +42,8 @@ export default {
       default: 1
     },
     amount: {
-      type: Number,
-      default: 1
+      type: String,
+      default: '1'
     },
     sum: {
       type: Number,
@@ -71,11 +71,8 @@ export default {
     },
     /* 点击支付成功 */
     paySuccess () {
-      this.$http.post('http://localhost:8090/api/pay/createOrder', {'operator': this.operator, 'amount': this.amount, 'sum': this.sum, 'receiver': this.receiver, 'iphone': this.iphone, 'address': this.address, 'goodId': this.goodId}, {emulateJSON: true}, function (response) {
-        if (response.data.code === 0) {
-          this.showCheckDialog = false
-          this.$router.push({path: '/orderList', query: {order: response.data.result}})
-        }
+      this.$http.post('http://localhost:8090/api/pay/createOrder', {'operator': this.operator, 'amount': this.amount, 'sum': this.sum, 'receiver': this.receiver, 'iphone': this.iphone, 'address': this.address, 'goodId': this.goodId}, {emulateJSON: true}).then(function (response) {
+        this.$router.push({path: '/orderList', query: {order: response.data.result}})
       })
     },
     /* 点击支付失败 */
