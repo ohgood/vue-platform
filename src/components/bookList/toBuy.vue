@@ -158,18 +158,6 @@
   .reg-info .input2 {
     margin-left:30px;
   }
-  .reg-info .code{
-    width:90px;
-    height:30px;
-    border:1px solid #aaa;
-    border-radius:5px;
-    background:#f0f;
-    margin-left:10px;
-    font-size:14px;
-    text-align:center;
-    line-height:30px;
-    cursor:pointer;
-  }
   .reg-info .regBtn {
     width:80px;
     height:35px;

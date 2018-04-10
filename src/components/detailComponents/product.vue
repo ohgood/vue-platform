@@ -91,7 +91,7 @@
   </myDialog>
 
   <!-- 支付状态选择框 -->
-  <checkDialog :show-check-dialog="isShowCheckDialog" @on-close="closeCheckDialog"></checkDialog>
+  <checkDialog :show-check-dialog="isShowCheckDialog" @on-close="closeCheckDialog" :good-id="goods.id" :amount="num" :sum="num*500"></checkDialog>
 
   </div>
 </template>

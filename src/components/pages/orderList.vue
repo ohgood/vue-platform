@@ -11,12 +11,7 @@
       <td>总价</td>
     </tr>
     <tr class="table-body">
-      <td>{{name1}}</td>
-      <td>{{type1}}</td>
-      <td>{{place1}}</td>
-      <td>{{number1}}</td>
-      <td>{{time1}}</td>
-      <td>{{price1}}</td>
+      <td>{{order.orderNo}}</td>
     </tr>
   </table>
 </div>
@@ -26,12 +21,7 @@
 export default {
   data () {
     return {
-      name1: JSON.parse(localStorage.getItem('orderList2')).name,
-      type1: JSON.parse(localStorage.getItem('orderList2')).type,
-      place1: JSON.parse(localStorage.getItem('orderList2')).place,
-      number1: JSON.parse(localStorage.getItem('orderList2')).number,
-      time1: JSON.parse(localStorage.getItem('orderList2')).time,
-      price1: JSON.parse(localStorage.getItem('orderList2')).price
+      order: this.$route.query.order
     }
   }
 }

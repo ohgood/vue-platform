@@ -40,7 +40,7 @@
       },
       picUrl: {
         type: String,
-        default: require('@/assets/img/QRcode.png')
+        default: require('@/assets/img/qrcode.png')
       },
       description: {
         type: String,
@@ -53,7 +53,7 @@
     },
     data: function () {
       return {
-        QRCodeUrl: require('../../assets/img/QRcode.png')
+        QRCodeUrl: require('../../assets/img/qrcode.png')
       }
     }
   }
