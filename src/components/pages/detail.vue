@@ -123,8 +123,8 @@ export default {
   border-top:20px solid #f4f9f7;
 }
 .sales-board-description h3 {
-   font-size:20px;
-   padding:15px 20px;
+  font-size:20px;
+  padding:15px 20px;
 }
 .sales-board-description p {
   background:#f7fcff;
@@ -153,9 +153,5 @@ export default {
 }
 .more-products h3 {
   padding:15px 20px;
-}
-.img {
-  width: 100px;
-  height: 100px;
 }
 </style>

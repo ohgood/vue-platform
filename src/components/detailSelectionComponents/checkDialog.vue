@@ -71,7 +71,7 @@ export default {
     },
     /* 点击支付成功 */
     paySuccess () {
-      this.$http.post('http://localhost:8090/api/pay/createOrder', {'operator': this.operator, 'amount': this.amount, 'sum': this.sum, 'receiver': this.receiver, 'iphone': this.iphone, 'address': this.address, 'goodId': this.goodId}, {emulateJSON: true}).then(function (response) {
+      this.$http.post('http://116.196.80.176:8090/api/pay/createOrder', {'operator': this.operator, 'amount': this.amount, 'sum': this.sum, 'receiver': this.receiver, 'iphone': this.iphone, 'address': this.address, 'goodId': this.goodId}, {emulateJSON: true}).then(function (response) {
         this.$router.push({path: '/orderList', query: {order: response.data.result}})
       })
     },
@@ -151,5 +151,52 @@ span {
 }
 .dialog-container .dialog-content {
   padding:15px;
+}
+.checkbox-component ul li {
+  list-style:none;
+  display:inline-block;
+  padding:0 10px;
+  line-height:25px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  margin-right:10px;
+  font-size:14px;
+  cursor:pointer;
+}
+.checkbox-component ul li.active {
+  background:#55ca93;
+  color:#fff;
+}
+.counter-show input {
+  width:30px;
+  height:23px;
+  border:none;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  text-align:center;
+  line-height:23px;
+}
+.radioChoose-wrap ul li {
+  list-style:none;
+  display:inline-block;
+  padding:0 10px;
+  line-height:25px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  margin-right:10px;
+  font-size:14px;
+  cursor:pointer;
+}
+.selection-list ul li {
+  list-style:none;
+  padding:3px 10px 3px 10px;
+  border-left:1px solid #e3e3e3;
+  border-right:1px solid #e3e3e3;
+  border-bottom:1px solid #e3e3e3;
+  font-size:14px;
+}
+.selection-list ul li:hover {
+  background:#eee;
+  cursor:pointer;
 }
 </style>

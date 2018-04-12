@@ -153,7 +153,7 @@ export default {
   font-weight:bold;
 }
 .index-left-allProducts ul {
-   margin:0 0 20px 32px;
+  margin:0 0 20px 32px;
 }
 .index-left-news ul {
   margin:15px 0 0 32px;
@@ -177,11 +177,12 @@ export default {
 
 /* 右侧 */
 .index-right {
-   width:75%;
-   float:right;
+  width:75%;
+  float:right;
 }
 .index-board-item {
   width:390px;
+  height:110px;
   background:#fff;
   padding:20px;
   margin:20px 10px 10px 20px;

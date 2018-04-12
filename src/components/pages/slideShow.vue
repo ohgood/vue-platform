@@ -70,54 +70,54 @@ export default {
 </script>
 
 <style scoped>
-/* 实现动画效果 */
-.slideShow {
-  position:relative;
-  width:900px;
-  height:500px;
-  margin:0 0 15px 20px;
-}
-.slide-img {
-  width:100%;
-}
-.slide-img img {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:500px;
-}
-.slide-info {
-  position:absolute;
-  bottom:0;
-  width:100%;
-  height:50px;
-  line-height:50px;
-  background:#000;
-  opacity:0.5;
-  color:#fff;
-}
-.slide-info p {
-  float:left;
-  margin-left:30px;
-}
-.slide-info ul {
-  float:right;
-  margin-right:30px;
-}
-.slide-info ul li {
-  list-style:none;
-  display:inline-block;
-  width:20px;
-  height:10px;
-  cursor:pointer;
-}
-.slide-info ul li a {
-  text-decoration:none;
-  color:#fff;
-}
-.slide-info .active {
-  font-size:18px;
-  color:#f60;
-}
+  /* 实现动画效果 */
+  .slideShow {
+    position:relative;
+    width:900px;
+    height:500px;
+    margin:0 0 15px 20px;
+  }
+  .slide-img {
+    width:100%;
+  }
+  .slide-img img {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:500px;
+  }
+  .slide-info {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    background:#000;
+    opacity:0.5;
+    color:#fff;
+  }
+  .slide-info p {
+    float:left;
+    margin-left:30px;
+  }
+  .slide-info ul {
+    float:right;
+    margin-right:30px;
+  }
+  .slide-info ul li {
+    list-style:none;
+    display:inline-block;
+    width:20px;
+    height:10px;
+    cursor:pointer;
+  }
+  .slide-info ul li a {
+    text-decoration:none;
+    color:#fff;
+  }
+  .slide-info .active {
+    font-size:18px;
+    color:#f60;
+  }
 </style>

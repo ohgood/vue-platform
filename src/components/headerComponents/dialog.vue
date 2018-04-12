@@ -63,8 +63,9 @@ export default {
 }
 .dialog-container {
   position:fixed;
+  left:25%;
   top:15%;
-  width:18%;
+  width:50%;
   background:#fff;
   border:4px solid #fffed7;
   border-radius:15px;

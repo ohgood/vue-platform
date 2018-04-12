@@ -121,49 +121,50 @@ export default {
 </script>
 
 <style>
-/* header */
-.app-header {
-  width:100%;
-  height:80px;
-  background: darkgrey;
-}
-.app-header-inner {
-  width:80%;
-  margin:0 auto;
-}
-.app-header .app-header-inner .header-img {
-  width:70px;
-  height:70px;
-  margin-top:5px;
-  border-radius:20px;
-}
-.app-header .app-header-inner ul {
-  float:right;
-}
-.app-header .app-header-inner ul li{
-  display:inline-block;
-  line-height:80px;
-  font-size:18px;
-  cursor:pointer;
-}
-.app-header .app-header-inner ul li:hover {
-  color:#f60;
-}
+  /* header */
+  .app-header {
+    width:100%;
+    height:80px;
+    background: darkgrey;
+  }
+  .app-header-inner {
+    width:80%;
+    margin:0 auto;
+  }
+  .app-header .app-header-inner .header-img {
+    width:70px;
+    height:70px;
+    margin-top:5px;
+    border-radius:20px;
+  }
+  .app-header .app-header-inner ul {
+    float:right;
+  }
+  .app-header .app-header-inner ul li{
+    display:inline-block;
+    line-height:80px;
+    font-size:18px;
+    cursor:pointer;
+  }
+  .app-header .app-header-inner ul li:hover {
+    color:#f60;
+  }
 
-/* content */
-.app-content {
-  width:100%;
-  height:1000px;
-}
+  /* content */
+  .app-content {
+    width:100%;
+    height:1000px;
+    background:#f4f9f7;
+  }
 
-/*footer*/
-.app-footer {
-  width:100%;
-  height:60px;
-  background:#ddd;
-}
-.app-footer p {
-  text-align:center;
-  line-height:60px;
-}
+  /*footer*/
+  .app-footer {
+    width:100%;
+    height:60px;
+    background:#ddd;
+  }
+  .app-footer p {
+    text-align:center;
+    line-height:60px;
+  }
 </style>
