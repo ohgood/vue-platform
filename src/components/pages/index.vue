@@ -182,7 +182,6 @@ export default {
 }
 .index-board-item {
   width:390px;
-  height:110px;
   background:#fff;
   padding:20px;
   margin:20px 10px 10px 20px;
