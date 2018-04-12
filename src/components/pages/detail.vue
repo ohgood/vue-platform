@@ -3,7 +3,7 @@
   <div class="detail-left">
     <div class="product-board">
       <!-- 为图片绑定路由映射 -->
-      <img :src="picUrl" class="img" style="width: 200px; height: 200px"/>
+      <img :src="picUrl" class="img" style="width: 100px; height: 100px"/>
     </div>
   </div>
   <div class="detail-right">
